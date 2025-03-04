@@ -1,5 +1,5 @@
 /**
- * Ashwin Sivabalan 400591520
+ * Ashwin Sivabalan
  * February 6th 2025
  * Javascript code for Tic Tac Toe game. Includes all functionality and rules
  */
