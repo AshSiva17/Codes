@@ -1,45 +1,117 @@
 <!DOCTYPE html>
-<!--
-Example of a Class that Renders to the DOM
-Sam Scott, McMaster, 2024
--->
+
 <html>
 
 <head>
-    <title>Example Class</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style/intro.css">
-    <script src="JS/intro.JS"></script>
+  <!--
+  Ashwin Sivabalan
+  February 6th 2025
+  HTML file of Tic-Tac-Toe game. Includes login screen, game screen, and instructions screen.
+  -->
+  <title>Example Class</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style/intro.css">
+  <script src="JS/index.JS"></script>
 
 
 </head>
 
 <body>
+  <div class="first">
     <h1>Tic-Tac-Toe</h1>
     <div class="boxes">
-        <div id="form" class="content">
-            <h1>Login</h1>
-            <input id="name" type="text">
-            <p>Name</p>
-            <input type="number" id="age" min="1">
-            <p>Age</p>
-            <input id="colour" type="text">
-            <p>Favourite Colour</p>
-            <input id="button1" type="button" value="Add a Player">
-            <input id="button2" type="button" value="Add a Bot " disabled="true">
-        </div>
-        <div id="playBox" class="content">
-            <h1 id="numplayers">Players</h1>
-            <div id="players">
-                <p>Max 2 Players</p>
-            </div>
-            <input id="button3" type="button" value="Remove a Player" disabled="true">
-            <input id="button4" type="button" value="Next Page" disabled="true">
-        </div>
+      <div id="form" class="content">
+        <h1>Login</h1>
+        <p>Name</p>
+        <input id="name" type="text" maxlength="6" placeholder="max 6 letters">
+        <p>Age</p>
+        <input type="number" id="age" min="1" max="99">
+        <p>Favourite Colour</p>
+        <input id="colour" type="color">
+        <input id="button1" type="button" value="Add a Player" disabled="true">
 
-       
+      </div>
+      <div id="playBox" class="content">
+        <h1 id="numplayers">Players</h1>
+        <div id="players">
+          <p>Max 2 Players</p>
+        </div>
+        <input id="button2" type="button" value="Remove a Player" disabled="true">
+        <input id="button3" type="button" value="Next Page" disabled="true">
+      </div>
+
+
     </div>
+  </div>
+
+  <div class="second">
+
+
+
+    <div class="title">
+      <h2 class="turn">{}'s turn</h1>
+        <img src="images/b.png" class="turnPic">
+    </div>
+
+    <div class="grid">
+
+
+      <div class="one"><img class="onePic" src="images/w.png"></div>
+      <div class="two"><img class="twoPic" src="images/w.png"></div>
+      <div class="three"><img class="threePic" src="images/w.png"></div>
+      <div class="four"><img class="fourPic" src="images/w.png"></div>
+      <div class="five"><img class="fivePic" src="images/w.png"></div>
+      <div class="six"><img class="sixPic" src="images/w.png"></div>
+      <div class="seven"><img class="sevenPic" src="images/w.png"></div>
+      <div class="eight"><img class="eightPic" src="images/w.png"></div>
+      <div class="nine"><img class="ninePic" src="images/w.png"></div>
+
+    </div>
+
+    <div class="buttons">
+      <input id="clear" type="button" value="New Round">
+      <input id="restart" type="button" value="Restart Score">
+      <input id="back" type="button" value="Back to Login">
+
+    </div>
+    <input id="help" type="button" value="Help">
+
+    <h3 class="score">Score</h3>
+    <h3 class="t1">Player 1</h3>
+    <h3 class="t2">Player 2</h3>
+    <h4 class="s1">0</h4>
+    <h4 class="s2">0</h4>
+
+
+
+  </div>
+
+  <div class="third">
+    <h1 class="instruc">Instructions</h1>
+
+    <div class="beg">
+      <h4>Beginning</h4>
+      <p>This is a 2 player game. One player is X and the other is O. Players take turns placing their mark (X or O) on
+        an empty square. Click on an empty space to place your mark</p>
+    </div>
+
+    <div class="obj">
+      <h4>Objective</h4>
+      <p>To win a round, be the first player to get three marks in a row (horizontally, vertically, or diagonally) on a
+        3x3 grid. If all 9 squares are filled and there is not a winner, the round is a draw. Click the "new round"
+        button at the end of each round.</p>
+    </div>
+
+    <div class="sco">
+      <h4>Score</h4>
+      <p>You can decide on a target score and whoever reaches that score first wins. You can restart scores and play
+        again by clicking the "Restart" button</p>
+    </div>
+
+    <input id="back2" type="button" value="Back">
+  </div>
+
 </body>
 
 </html>
