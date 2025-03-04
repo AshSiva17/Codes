@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+</head>
+ 
+<body>
+ 
+    <div id="content">
+        <h3>Draw</h3>
+        <div id="toolBar">
+            <div class="tile">
+                <h4>Color</h4>
+                <input type="color" name="stroke" id="color">
+            </div>
+            <div class="tile">
+                <h4>Thickness</h4>
+                <input type="number" name="thickness" id="size" value="5">
+            </div>
+ 
+            <div class="tile3">
+                <input type="button" class="shape" id="square" value="square">
+                <input type="button" class="shape" id="triangle" value="triangle">
+                <input type="button" class="shape" id="line" value="line">
+                <input type="button" class="shape" id="circle" value="circle">
+            </div>
+ 
+            <div class="tile">
+                <button id="clear">Clear</button>
+                <button id="undo">Undo</button>
+            </div>
+        </div>
+ 
+        <div class="board">
+            <canvas id="canvas" height="500px" width="1000px"></canvas>
+        </div>
+    </div>
+ 
+</body>
+ 
+</html>
+ 
