@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- 
+author: Jemuel Lateo, Ashwin Sivabalan, Omar Alshantout, Shourya Jeswani
+date: 2025-04-24
+html for log in web page
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+    <title>Log in to Drip&Dop</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Drip&Drop</h1>
+        <img src="../images/Drip.png" id="headerImg">
+    </div>
+
+    <div id="content">
+        <form method="POST" id="form">
+            <p>Log in to Drip&Drop</p>
+            <input type="email" id="email" name="email" size="50" placeholder="Email address" required>
+            <div id="passwordDiv">
+                <input type="password" id="password" name="password" size="50" placeholder="New password">
+                <label for="passoword" id="togglePassword">👁️</label>
+            </div>
+            <p id="errorMessage"></p>
+            <input type="submit" class="submit" value="Log in">
+        </form>
+        <div id="forgotAccount">
+            <a href="resetPassword.html" id="forgotLink">Forgotten account?</a>
+        </div>
+        <div id="p_or">
+            <p>or
+            <p>
+        </div>
+        <a id="newAccountBtn" href="createAccount.html">Create new account</a>
+    </div>
+
+    <div id="footer">
+        &copy; Jemuel, Ashwin, Omar, Shourya, McMaster University 2025
+    </div>
+</body>
+
+</html>

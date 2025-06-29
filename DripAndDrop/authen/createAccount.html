@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- 
+author: Jemuel Lateo, Ashwin Sivabalan, Omar Alshantout, Shourya Jeswani
+date: 2025-04-24
+html for create new account web page
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/createAccount.css">
+    <script src="../js/createAccount.js"></script>
+    <title>Create new account</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Drip&Drop</h1>
+        <img src="../images/Drip.png" id="headerImg">
+    </div>
+
+    <div id="content">
+        <form method="POST" action="createAccount.php">
+            <div id="title">
+                <h2>Create a new account</h2>
+                <p>It's quick and easy</p>
+            </div>
+            <div id="names">
+                <input type="text" name="firstName" id="firstName" placeholder="First name" required>
+                <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
+            </div>
+            <div id="birthDiv">
+                <label for="birthday" id="birthLabel" name="birthday">Birthday: </label>
+                <input type="date" name="birthday" id="birthday" required>
+                <p id="birthdayError"></p>
+            </div>
+            <input type="email" id="email" name="email" size="50" placeholder="Email address">
+            <label for="email" id="emailError"></label>
+            <div id="passwordDiv">
+                <input type="password" id="password" name="password" size="20" placeholder="New password">
+                <label for="passoword" id="togglePassword">👁️</label>
+            </div>
+            <p id="passwordError"></p>
+            <div id="passwordDiv">
+                <input type="password" id="checkPassword" name="checkPassword" size="20" placeholder="Re-enter password">
+                <label for="checkPassword" id="toggleCheck">👁️</label>
+            </div>
+            <p id="checkError"></p>
+            <input type="submit" id="newAccountBtn" value="Sign up">
+        </form>
+        <div id="haveAccount">
+            <a href="login.html" id="haveAccount">Already have an account?</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; Jemuel, Ashwin, Omar, Shourya, McMaster University 2025
+    </div>
+</body>
+
+</html>

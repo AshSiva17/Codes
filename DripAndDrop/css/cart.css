@@ -1,0 +1,288 @@
+/* 
+author: Jemuel Lateo, Ashwin Sivabalan, Omar Alshantout, Shourya Jeswani
+date: 2025-04-24
+CSS for cart page
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    text-decoration: none;
+    overflow-x: clip;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #e7eaf3;
+    /* Background color */
+    color: #0e111a;
+    /* Text color */
+}
+
+header {
+    background-color: #263259;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #e7eaf3;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #8597d1;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3851a3;
+}
+
+#headImg {
+    width: 50px;
+}
+
+main {
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cart-bookmark-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cart-section,
+.bookmark-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section h3,
+.bookmark-section h3 {
+    margin-bottom: 1rem;
+    color: #263259;
+    /* Primary color */
+}
+
+.cart-item,
+.bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e7eaf3;
+    /* Background color */
+}
+
+.cart-item img,
+.bookmark-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.upvote-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upvote-btn {
+    background-color: #8597d1;
+    /* Secondary color */
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upvote-btn:hover {
+    background-color: #3851a3;
+    /* Accent color */
+}
+
+.remove-btn {
+    background-color: #3851a3;
+    /* Accent color */
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #263259;
+    /* Primary color */
+}
+
+.cart-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-actions p {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3851a3;
+    /* Accent color */
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #263259;
+    /* Primary color */
+}
+
+.btn-primary.disabled {
+    background-color: #8597d1;
+    /* Secondary color */
+    cursor: not-allowed;
+}
+
+.sort-options {
+    margin-bottom: 1rem;
+}
+
+.sort-options select {
+    padding: 0.5rem;
+    border: 1px solid #8597d1;
+    /* Secondary color */
+    border-radius: 4px;
+}
+
+#Products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.prod {
+    margin: 15px 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .prod img {
+    width: 200px;
+  
+  }
+  
+  
+  .productContent {
+    width: 100%;
+    float: none;
+    overflow: clip;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+.remove {
+    cursor: pointer;
+    border-style: none;
+    padding: 5px;
+    color: white;
+    font-weight: 550;
+    background-color: #bc1717;
+    border-radius: 5px;
+}
+
+.remove:hover {
+    background-color: #ad2020;
+}
+
+#popUpOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popUp {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+#popUp h3 {
+    padding-bottom: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-bookmark-container {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

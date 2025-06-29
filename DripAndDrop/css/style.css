@@ -1,0 +1,270 @@
+/* 
+author: Jemuel Lateo, Ashwin Sivabalan, Omar Alshantout, Shourya Jeswani
+date: 2025-04-24
+CSS for main menu page
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: clip;
+
+}
+
+header {
+  background-color: #263259;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #e7eaf3;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #8597d1;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3851a3;
+}
+
+#headImg {
+  width: 50px;
+}
+
+body {
+  background: #e7eaf3;
+}
+
+.search{
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.searchBar{
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  background-size: 15px;
+}
+
+.searchResults ul {
+  display: none;
+  background-color: white;
+  z-index: 3;
+  width: 100%;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  background-size: 15px;
+}
+
+.searchResults li:hover {
+  cursor: pointer;
+  background-color: rgb(191, 189, 189);
+}
+
+
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1; 
+}
+
+.filters form {
+  padding-right: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#filterSelections{
+  width: 30%;
+}
+
+#categorySelections{
+  width: 30%;
+}
+
+#category{
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  background-size: 15px;
+}
+
+#filters{
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  background-size: 15px;
+}
+
+.Products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Products h1 {
+  text-align: center;
+}
+
+.prod {
+  background-color: #8597d1;
+  margin: 15px 0px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 90%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.prod img {
+  width: 200px;
+}
+
+.productContent {
+  width: 100%;
+  float: none;
+  overflow: clip;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.imageContent {
+  position: relative;
+  padding: 10px;
+}
+
+.fav {
+  width: 20px;
+  left: 87%;
+  top: 2%;
+  z-index: 1;
+  border-radius: 11px;
+}
+
+.fav:hover {
+  background-color: rgb(190, 184, 184);
+}
+
+.addToCart {
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+  color: white;
+  font-weight: 550;
+  background-color: #1756bc;
+  border-radius: 5px;
+}
+
+.addToCart:hover {
+  background-color: #2037ad;
+}
+
+.remove {
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+  color: white;
+  font-weight: 550;
+  background-color: #bc1717;
+  border-radius: 5px;
+}
+
+.remove:hover {
+  background-color: #ad2020;
+}
+
+#resetFilter{
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+  color: white;
+  font-weight: 550;
+  background-color: #1756bc;
+  border-radius: 5px;
+}
+
+#resetFilter:hover {
+  background-color: #2037ad;
+}
+
+#popUpOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popUp {
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+#popUp h3{
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 700px) {}
+
+@media screen and (min-width: 520px) {}

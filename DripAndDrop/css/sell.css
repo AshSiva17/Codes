@@ -1,0 +1,250 @@
+/* 
+author: Jemuel Lateo, Ashwin Sivabalan, Omar Alshantout, Shourya Jeswani
+date: 2025-04-24
+CSS for sell page
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    text-decoration: none;
+    overflow-x: clip;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7eaf3;
+    /* Background color */
+    color: #0e111a;
+    /* Text color */
+}
+
+header {
+    background-color: #263259;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #e7eaf3;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #8597d1;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3851a3;
+}
+
+#headImg {
+    width: 50px;
+}
+
+#pageTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#formContainer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 70%;
+}
+
+.formSection {
+    margin-bottom: 30px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: blocl;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.formGroup .subLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    columns: #777;
+}
+
+.formControl {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.formControl:focus {
+    border-color: #4a6ee0;
+    outline: none;
+}
+
+textarea.formControl {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.selectControl {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    appearance: none;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+.imageUploadContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.imageUploadBox {
+    height: 150px;
+    border: 2px dashed #ddd;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageUploadBox:hover {
+    border-color: #4a6ee0;
+}
+
+.imageUploadBox input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imageUploadBox svg {
+    width: 40px;
+    height: 40px;
+    stroke: #777;
+    margin-bottom: 10px;
+}
+
+.imageUploadBox p {
+    font-size: 14px;
+    columns: #777;
+    text-align: center;
+}
+
+#preview {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.priceInputGroup {
+    display: flex;
+    align-items: center;
+}
+
+.priceInputGroup span {
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    font-weight: 500;
+}
+
+.priceInputGroup input {
+    background-repeat: 0 6pc 6pc 0;
+}
+
+.fieldRow {
+    display: flex;
+    gap: 15px;
+}
+
+.fieldRow .formGroup {
+    flex: 1;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.submitBtn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    background-color: #4a6ee0;
+    color: white;
+}
+
+.submitBtn:hover {
+    background-color: #3a5bd0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #263259;
+    color: #e7eaf3;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  } 
